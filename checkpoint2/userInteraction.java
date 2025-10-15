@@ -16,16 +16,16 @@ public class userInteraction {
         int input = in.nextInt();
         switch (input) {
             case 1:
-                rentEquip();
+                rentEquip(in);
                 break;
             case 2:
-                returnEquip();
+                returnEquip(in);
                 break;
             case 3:
-                equipDeliver();
+                equipDeliver(in);
                 break;
             case 4:
-                equipPickup();
+                equipPickup(in);
                 break;
             default:
                 System.out.println("Error: Invalid input, try again!");
@@ -36,22 +36,50 @@ public class userInteraction {
         return(0);
     }
 
-    static int rentEquip(){
+    static int rentEquip(Scanner in){
+        System.out.println("Please enter the Rental Number: ");
+        String rNum = in.nextLine();
+        System.out.println("Please enter the Customer Id: ");
+        String cID = in.nextLine();
+        System.out.println("Please enter the Equipment Serial Number: ");
+        String sNum = in.nextLine();
+        System.out.println("Please enter the Rental Date: ");
+        int rDate = in.nextInt();
+        System.out.println("Please enter the Due Date: ");
+        int dDate = in.nextInt();
+        System.out.println("Please enter the Fee: ");
+        int fee = in.nextInt();
         System.out.println("Equipment Rented!");
         return(0);
     }
 
-    static int returnEquip(){
+    static int returnEquip(Scanner in){
+        System.out.println("Please enter the Rental Number: ");
+        String rNum = in.nextLine();
+        System.out.println("Please enter the Date of Return: ");
+        int doR = in.nextInt();
         System.out.println("Equipment Returned!");
         return(0);
     }
 
-    static int equipDeliver(){
+    static int equipDeliver(Scanner in){
+        System.out.println("Please enter the Rental Number: ");
+        int rNum = in.nextInt();
+        System.out.println("Please enter the Drone Serial Number : ");
+        int dsNum = in.nextInt();
+        System.out.println("Please enter the Date of Arrival: ");
+        int doA = in.nextInt();
         System.out.println("Equipment Delivered!");
         return(0);
     }
 
-    static int equipPickup(){
+    static int equipPickup(Scanner in){
+        System.out.println("Please enter the Rental Number: ");
+        int rNum = in.nextInt();
+        System.out.println("Please enter the Drone Serial Number : ");
+        int dsNum = in.nextInt();
+        System.out.println("Please enter the Date of Pickup: ");
+        int doPU = in.nextInt();
         System.out.println("Equipment Picked Up!");
         return(0);
     }
