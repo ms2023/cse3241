@@ -1,4 +1,4 @@
-package checkpoint2;
+package checkpoint2Files.checkpoint2;
 
 class droneEntityClass implements droneEntity{
     public int addRecord(String SerialNum, float weightCap, String status, float dist, float maxSpeed, String Model){

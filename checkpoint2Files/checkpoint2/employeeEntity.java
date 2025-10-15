@@ -1,4 +1,4 @@
-package checkpoint2;
+package checkpoint2Files.checkpoint2;
 
 interface employeeEntity extends entity {
     public int addRecord(int ID, String fName, String lName, String pos, String loc);

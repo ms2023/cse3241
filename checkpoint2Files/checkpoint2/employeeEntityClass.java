@@ -1,4 +1,4 @@
-package checkpoint2;
+package checkpoint2Files.checkpoint2;
 
 class employeeEntityClass implements employeeEntity{
 

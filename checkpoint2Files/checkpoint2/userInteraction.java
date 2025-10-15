@@ -1,4 +1,4 @@
-package checkpoint2;
+package checkpoint2Files.checkpoint2;
 import java.util.Scanner;
 public class userInteraction {
     public static int  printMenu(){

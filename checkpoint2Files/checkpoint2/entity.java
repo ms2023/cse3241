@@ -1,4 +1,4 @@
-package checkpoint2;
+package checkpoint2Files.checkpoint2;
 public interface entity{
     public int addRecord();
     public int editRecord();
