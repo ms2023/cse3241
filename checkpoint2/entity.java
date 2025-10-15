@@ -1,6 +1,6 @@
 package checkpoint2;
 public interface entity{
-    int addRecord();
-    int editRecord();
-    int search();
+    public int addRecord();
+    public int editRecord();
+    public int search();
 }
