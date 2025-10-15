@@ -1,16 +1,17 @@
 package checkpoint2;
 import java.util.Scanner;
 public class userInteraction {
-    public static void  printMenu(){
+    public static int  printMenu(){
         System.out.println("Please enter one of the following options:");
         System.out.println("1. Rent equipment");
         System.out.println("2. Return Equipment");
         System.out.println("3. Equipment Delivery");
         System.out.println("4. Equipment Pickup");
         userChoice();
+        return(0);
     }
 
-    static void userChoice(){
+    static int userChoice(){
         Scanner in = new Scanner(System.in);
         int input = in.nextInt();
         switch (input) {
@@ -32,21 +33,26 @@ public class userInteraction {
                 userChoice();
                 break;
         }
+        return(0);
     }
 
-    static void rentEquip(){
+    static int rentEquip(){
         System.out.println("Equipment Rented!");
+        return(0);
     }
 
-    static void returnEquip(){
+    static int returnEquip(){
         System.out.println("Equipment Returned!");
+        return(0);
     }
 
-    static void equipDeliver(){
+    static int equipDeliver(){
         System.out.println("Equipment Delivered!");
+        return(0);
     }
 
-    static void equipPickup(){
+    static int equipPickup(){
         System.out.println("Equipment Picked Up!");
+        return(0);
     }
 }
